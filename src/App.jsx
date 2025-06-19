@@ -1,35 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function FilmPlayer({ videoUrl }) {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more!!!!
-      </p>
-    </>
-  )
+    <div style={{ textAlign: 'center', padding: '2rem' }}>
+      <h1>Watch Film</h1>
+      <iframe
+        src={videoUrl}
+        width="800"
+        height="450"
+        allow="autoplay"
+        allowFullScreen
+        title="Film Player"
+        style={{ border: 'none' }}
+      />
+    </div>
+  );
 }
 
-export default App
+// Example usage with your Google Drive preview URL
+export default function App() {
+  const filmUrl = 'https://drive.google.com/file/d/1Ct8lYzDFxaTBdyUs7AkzXmdP7H-iNcIK/preview';
+
+  return <FilmPlayer videoUrl={filmUrl} />;
+}
