@@ -1,6 +1,6 @@
 import {films} from './data.js'
 import FilmPlayer from './FilmPlayer.jsx'
-import 'App.css'
+import './App.css'
 
 export function App() {
     const listItems = films.map(film => 
