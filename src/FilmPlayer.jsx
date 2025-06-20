@@ -1,7 +1,7 @@
-export default function FilmPlayer({ videoUrl }) {
+export default function FilmPlayer({ videoUrl, filmName }) {
   return (
     <div style={{ textAlign: 'center', padding: '2rem' }}>
-      <h1>Watch Film</h1>
+      <h2>Watch {filmName}</h2>
       <iframe
         src={videoUrl}
         width="800"

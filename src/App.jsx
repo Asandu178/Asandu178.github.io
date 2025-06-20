@@ -4,8 +4,7 @@ import FilmPlayer from './FilmPlayer.jsx'
 export function App() {
     const listItems = films.map(film => 
         <li key={film.id}>
-            <p>{film.name}</p>
-            <FilmPlayer videoUrl={film.url}/>
+            <FilmPlayer videoUrl={film.url} filmName={film.name}/>
         </li>
     );
     return <ul>{listItems}</ul>
