@@ -4,8 +4,8 @@ export default function FilmPlayer({ videoUrl, filmName }) {
       <h2>Watch {filmName}</h2>
       <iframe
         src={videoUrl}
-        width="800"
-        height="450"
+        width="200"
+        height="200"
         allow="autoplay"
         allowFullScreen
         title="Film Player"
