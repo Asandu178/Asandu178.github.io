@@ -1,6 +1,4 @@
-import React from 'react';
-
-function FilmPlayer({ videoUrl }) {
+export default function FilmPlayer({ videoUrl }) {
   return (
     <div style={{ textAlign: 'center', padding: '2rem' }}>
       <h1>Watch Film</h1>
@@ -17,9 +15,3 @@ function FilmPlayer({ videoUrl }) {
   );
 }
 
-// Example usage with your Google Drive preview URL
-export default function App() {
-  const filmUrl = 'https://drive.google.com/file/d/1Ct8lYzDFxaTBdyUs7AkzXmdP7H-iNcIK/preview';
-
-  return <FilmPlayer videoUrl={filmUrl} />;
-}
