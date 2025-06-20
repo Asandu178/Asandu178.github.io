@@ -1,7 +1,7 @@
 import {films} from './data.js'
 import FilmPlayer from './FilmPlayer.jsx'
 
-export default function App() {
+export function App() {
     const listItems = films.map(film => 
         <li key={film.id}>
             <p>{film.name}</p>
