@@ -1,0 +1,7 @@
+.FilmsList {
+    display: flex;
+    gap: 1rem; /* space between items */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
